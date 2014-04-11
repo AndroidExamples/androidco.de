@@ -1,0 +1,13 @@
+{
+    "name": "androidco-de-website",
+    "version": "0.1.0",
+    //"main": "path/to/main.css",
+    "ignore": [
+        ".jshintrc",
+        "**/*.txt"
+    ],
+    "dependencies": {
+        "angular": "latest",
+        "angular-ui-router": "latest"
+    }
+}

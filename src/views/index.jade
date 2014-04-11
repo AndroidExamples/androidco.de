@@ -6,7 +6,7 @@ head
     meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name='description', content='')
     meta(name='author', content='')
-    link(rel='shortcut icon', href='/ico/favicon.ico')
+    link(rel='shortcut icon', href='/assets/favicon.ico')
     title ANDROIDCO.DE your number one android code example resource
     // Bootstrap core CSS
     link(href='css/bootstrap.min.css', rel='stylesheet')
@@ -24,20 +24,16 @@ head
                         .inner
                             h3.masthead-brand androidco.de
                             ul.nav.masthead-nav
-                                li.active
-                                    a(href='/index.html') Home
-                                li
+                                li(ng-class='')
+                                    a(ui-sref='home') Home
+                                li(ng-class='')
                                     //- TODO replace this
                                     a(href='https://github.com/hanscappelle/more-android-examples/blob/master/README.md') Projects
-                                li
-                                    a(href='/about.html') About
-                    .inner.cover
-                        h1.cover-heading Android Example Code
-                        p.lead
-                            | At androidco.de we collect Android code examples for daily use. This is great for
-                            | both beginners getting comfortable with Android and Experts in need of some memory refreshment.
-                        p.lead
-                            a.btn.btn-lg.btn-default(href='about.html') Learn more
+                                li(ng-class='')
+                                    a(ui-sref='about') About
+
+                    .inner.cover(ui-view)
+
                     .mastfoot
                         .inner
                             p
@@ -48,9 +44,12 @@ head
                                 |&nbsp;
                                 a(href='https://twitter.com/mdo') @mdo
                                 | .
-       // Bootstrap core JavaScript
-       // ==================================================
-       // Placed at the end of the document so the pages load faster
-       script(src='js/jquery.min.js')
-       script(src='js/bootstrap.min.js')
-       script(src='js/docs.min.js')
+        // Bootstrap core JavaScript
+        // ==================================================
+        // Placed at the end of the document so the pages load faster
+        script(src='js/jquery.min.js')
+        script(src='js/bootstrap.min.js')
+        script(src='js/docs.min.js')
+        script(src='bower_components/angular/angular.min.js')
+        script(src='bower_components/angular-ui-router/release/angular-ui-router.min.js')
+        script(src='js/app.js')
