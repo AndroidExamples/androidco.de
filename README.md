@@ -2,7 +2,11 @@
 
 This is the code repository for the website hosted at http://androidco.de
 
-## History
+## Version History
+
+### 0.1.1
+
+The initial version deployed on heroku. Needs work. 
 
 ### 0.1.0
 
