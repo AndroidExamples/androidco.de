@@ -9,11 +9,11 @@ Use grunt to compile jade files into html. During development grunt watch can be
 ## Open Issues
 
 * preload image
-* fix projects overview
+* complete projects overview
 
 ### Solved
 
-* use anular to show/hide content instead of reloading
+* use angular to show/hide content instead of reloading
 
 ## Version History
 
