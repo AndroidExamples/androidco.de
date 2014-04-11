@@ -9,5 +9,8 @@
         "grunt-contrib-uglify": "~0.2.2",
         "grunt-contrib-jade" : "latest",
         "grunt-contrib-watch" : "latest"
+    },
+    "engines": {
+        "node": "0.10.x"
     }
 }
