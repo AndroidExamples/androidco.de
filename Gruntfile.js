@@ -21,6 +21,10 @@ module.exports = function(grunt) {
                 } ]
             }
         },
+
+        // uglification of scripts
+        // TODO
+
         watch: {
             templates:{
                 files: ['src/views/*.jade'],

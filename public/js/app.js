@@ -6,10 +6,17 @@ myApp.config(function($stateProvider, $urlRouterProvider){
     $urlRouterProvider.otherwise("/home")
 
     $stateProvider
+
         .state('home', {
             url: "/home",
             templateUrl: "partials/home.html"
         })
+
+        .state('projects', {
+            url: "/projects",
+            templateUrl: "partials/projects.html"
+        })
+
         .state('about', {
             url: "/about",
             templateUrl: "partials/about.html"
