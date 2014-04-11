@@ -24,12 +24,13 @@ head
                         .inner
                             h3.masthead-brand androidco.de
                             ul.nav.masthead-nav
-                                li(ng-class='')
+                                li(ui-sref-active='active')
                                     a(ui-sref='home') Home
-                                li(ng-class='')
+                                li(ui-sref-active='active')
                                     //- TODO replace this
                                     a(href='https://github.com/hanscappelle/more-android-examples/blob/master/README.md') Projects
-                                li(ng-class='')
+
+                                li(ui-sref-active='active')
                                     a(ui-sref='about') About
 
                     .inner.cover(ui-view)
