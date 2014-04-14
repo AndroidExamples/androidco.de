@@ -30,7 +30,7 @@ angular.module('myApp', ['ui.router', 'yaru22.md'])
 })
 
   .controller('ProjectsCtrl', function($scope, $http){
-
+    /*
     // TODO retrieve raw project md files here
     $http({method: 'GET', url: 'https://raw.githubusercontent.com/hanscappelle/more-android-examples/master/README.md'})
       .success(function(data) {
@@ -44,4 +44,5 @@ angular.module('myApp', ['ui.router', 'yaru22.md'])
         console.log('problem retrieving readme file');
         $scope.readme = 'problem retrieving readme file';
       });
+      */
   });
