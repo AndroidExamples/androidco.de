@@ -54,7 +54,7 @@ module.exports = function(grunt) {
 
         watch: {
             templates:{
-                files: ['src/views/*.jade'],
+                files: ['src/views/**/*.jade'],
                 tasks: ['jade']
             },
             scripts: {
