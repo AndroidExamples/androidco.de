@@ -14,7 +14,7 @@ Use grunt to compile jade files into html. During development grunt watch can be
 
 ## Version History
 
-### 0.1.3 (wip)
+### 0.1.3
 
 * complete projects overview, use md file rendering
 
@@ -35,4 +35,5 @@ Initial version with a cover page, about page and a link to github project readm
 ## Resources
 
 * https://www.npmjs.org/package/angular-md for md rendering
+* https://github.com/zeke/github-raw-cors-proxy
 

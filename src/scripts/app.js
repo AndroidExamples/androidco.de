@@ -2,11 +2,7 @@
 
 angular.module('myApp', ['ui.router', 'yaru22.md'])
 
-.config(function($httpProvider, $stateProvider, $urlRouterProvider){
-
-    // enable cors
-    $httpProvider.defaults.useXDomain = true;
-    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+.config(function($stateProvider, $urlRouterProvider){
 
     // For any unmatched url, send to /route1
     $urlRouterProvider.otherwise("/home");
@@ -30,13 +26,13 @@ angular.module('myApp', ['ui.router', 'yaru22.md'])
 })
 
   .controller('ProjectsCtrl', function($scope, $http){
-    /*
-    // TODO retrieve raw project md files here
-    $http({method: 'GET', url: 'https://raw.githubusercontent.com/hanscappelle/more-android-examples/master/README.md'})
+
+    // retrieve raw project md files here
+    $http({method: 'GET', url: 'http://github-raw-cors-proxy.herokuapp.com/hanscappelle/more-android-examples/master/README.md'})
       .success(function(data) {
         // this callback will be called asynchronously
         // when the response is available
-        $scope.readme = data;
+        $scope.readme = data.substring(1, data.length-1).replace(/\\n/g, '\r\n');
       })
       .error(function() {
         // called asynchronously if an error occurs
@@ -44,5 +40,5 @@ angular.module('myApp', ['ui.router', 'yaru22.md'])
         console.log('problem retrieving readme file');
         $scope.readme = 'problem retrieving readme file';
       });
-      */
+
   });

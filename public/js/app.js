@@ -1,9 +1,7 @@
 /*! androidco-de-website v0.1.0 2014-04-14 */
 "use strict";
 
-angular.module("myApp", [ "ui.router", "yaru22.md" ]).config(function($httpProvider, $stateProvider, $urlRouterProvider) {
-    $httpProvider.defaults.useXDomain = true;
-    delete $httpProvider.defaults.headers.common["X-Requested-With"];
+angular.module("myApp", [ "ui.router", "yaru22.md" ]).config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/home");
     $stateProvider.state("home", {
         url: "/home",
@@ -15,4 +13,14 @@ angular.module("myApp", [ "ui.router", "yaru22.md" ]).config(function($httpProvi
         url: "/about",
         templateUrl: "partials/about.html"
     });
-}).controller("ProjectsCtrl", function($scope, $http) {});
+}).controller("ProjectsCtrl", function($scope, $http) {
+    $http({
+        method: "GET",
+        url: "http://github-raw-cors-proxy.herokuapp.com/hanscappelle/more-android-examples/master/README.md"
+    }).success(function(data) {
+        $scope.readme = data.substring(1, data.length - 1).replace(/\\n/g, "\r\n");
+    }).error(function() {
+        console.log("problem retrieving readme file");
+        $scope.readme = "problem retrieving readme file";
+    });
+});
