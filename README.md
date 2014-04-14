@@ -8,8 +8,10 @@ Use grunt to compile jade files into html. During development grunt watch can be
 
 ## Open Issues
 
-* preload image
-* complete projects overview
+* preload background image
+* complete projects overview, use md file rendering
+* livereload config for dev
+* enable jshint checks
 
 ### Solved
 
@@ -27,5 +29,9 @@ The initial version deployed on heroku. Needs work.
 
 ### 0.1.0
 
-Initial version with a cover page, about page and a link to github project readme file. Next step is to polish that project overview. 
+Initial version with a cover page, about page and a link to github project readme file. Next step is to polish that project overview.
+
+## Resources
+
+* https://www.npmjs.org/package/angular-md for md rendering
 

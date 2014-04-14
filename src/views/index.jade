@@ -1,5 +1,5 @@
 doctype html
-html(lang='en', ng-app='myApp')
+html(lang='en')
 head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
@@ -16,7 +16,7 @@ head
     //if lt IE 9
         script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
         script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
-    body
+    body(ng-app='myApp')
         .site-wrapper
             .site-wrapper-inner
                 .cover-container
@@ -51,6 +51,11 @@ head
         script(src='js/jquery.min.js')
         script(src='js/bootstrap.min.js')
         script(src='js/docs.min.js')
+
         script(src='bower_components/angular/angular.min.js')
         script(src='bower_components/angular-ui-router/release/angular-ui-router.min.js')
+
+        script(src='bower_components/marked/lib/marked.js')
+        script(src='bower_components/angular-md/dist/angular-md.min.js')
+
         script(src='js/app.js')

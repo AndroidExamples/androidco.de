@@ -2,6 +2,7 @@
     "name": "androidco-de-website",
     "dependencies": {
         "angular": "latest",
-        "angular-ui-router": "0.2.10"
+        "angular-ui-router": "0.2.10",
+        "angular-md" : "1.0.0"
     }
 }

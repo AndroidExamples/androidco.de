@@ -12,12 +12,12 @@ var app = express();
 
 // Configuration
 app.use(express.logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded());
-app.use(express.methodOverride());
-app.use(express.cookieParser(config.secret));
-app.use(express.session());
-app.use(app.router);
+//app.use(express.json());
+//app.use(express.urlencoded());
+//app.use(express.methodOverride());
+//app.use(express.cookieParser(config.secret));
+//app.use(express.session());
+//app.use(app.router);
 
 app.use(express.static(path.join(__dirname, 'public'))); // this ensures all files in public folder are served
 
