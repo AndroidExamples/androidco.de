@@ -11,6 +11,7 @@ Use grunt to compile jade files into html. During development grunt watch can be
 * preload background image
 * livereload config for dev
 * enable jshint checks
+* update favicon
 
 ## Version History
 
