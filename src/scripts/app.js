@@ -25,6 +25,19 @@ angular.module('myApp', ['ui.router', 'yaru22.md'])
         });
 })
 
-  .controller('ExampleCtrl', function($scope){
-    $scope.mdText = '## Example 3\nThis is the third example. Modify the text in the text box and see it being rendered on the fly!';
+  .controller('ProjectsCtrl', function($scope, $http){
+
+    // TODO retrieve raw project md files here
+    $http({method: 'GET', url: 'https://raw.githubusercontent.com/hanscappelle/more-android-examples/master/README.md'})
+      .success(function(data) {
+        // this callback will be called asynchronously
+        // when the response is available
+        $scope.readme = data;
+      })
+      .error(function() {
+        // called asynchronously if an error occurs
+        // or server returns response with an error status.
+        console.log('problem retrieving readme file');
+        $scope.readme = 'problem retrieving readme file';
+      });
   });
