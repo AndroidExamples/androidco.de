@@ -1,4 +1,4 @@
-/*! androidco-de-website v0.1.0 2014-04-14 */
+/*! androidco-de-website v0.1.0 2014-04-15 */
 "use strict";
 
 angular.module("myApp", [ "ui.router", "yaru22.md" ]).config(function($stateProvider, $urlRouterProvider) {
@@ -16,11 +16,11 @@ angular.module("myApp", [ "ui.router", "yaru22.md" ]).config(function($stateProv
 }).controller("ProjectsCtrl", function($scope, $http) {
     $http({
         method: "GET",
-        url: "http://github-raw-cors-proxy.herokuapp.com/hanscappelle/more-android-examples/master/README.md"
+        url: "https://raw.githubusercontent.com/AndroidExamples/androidco.de/master/PROJECTS.md"
     }).success(function(data) {
-        $scope.readme = data.substring(1, data.length - 1).replace(/\\n/g, "\r\n");
+        $scope.markedContent = data.substring(1, data.length - 1).replace(/\\n/g, "\r\n");
     }).error(function() {
-        console.log("problem retrieving readme file");
-        $scope.readme = "problem retrieving readme file";
+        console.log("problem retrieving marked content file");
+        $scope.markedContent = "problem retrieving marked content file";
     });
 });
