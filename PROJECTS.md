@@ -2,11 +2,13 @@
 
 A GitHub repository collecting Android examples. For more information check project website at [http://androidco.de](http://androidco.de).
 
-## Base Project
+## SwipeRefreshLayout-ListViewExample
 
-Ignore this one since it nothing more than a basic Android Eclipse project. This is used for creating new examples only. Some of our examples (mostly older ones) are still eclipse projects. If you really want them in Android Studio instead of ADT you can always use the import options from Android Studio (File > Import Project).
+Example SwipeRefreshLayout with ListView-EmptyView combination.
 
-https://github.com/hanscappelle/more-android-examples/tree/master/BaseProject
+https://github.com/AndroidExamples/SwipeRefreshLayout-ListViewExample
+
+https://plus.google.com/114880761689491946950/posts/AgmWt8ajZR3
 
 ## Actionbar Compat & Menu Drawer
 
