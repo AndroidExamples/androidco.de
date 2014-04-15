@@ -11,9 +11,15 @@ Use grunt to compile jade files into html. During development grunt watch can be
 * preload background image
 * livereload config for dev
 * enable jshint checks
-* update favicon
+* more info needed on contributors
 
 ## Version History
+
+### 0.1.4
+
+* moved repo to organization +  update references
+* moved projects overview marked content
+* update favicon
 
 ### 0.1.3
 
@@ -33,8 +39,10 @@ The initial version deployed on heroku. Needs work.
 
 Initial version with a cover page, about page and a link to github project readme file. Next step is to polish that project overview.
 
-## Resources
+## External Resources
 
 * https://www.npmjs.org/package/angular-md for md rendering
 * https://github.com/zeke/github-raw-cors-proxy
+* https://github.com/AndroidExamples
+* http://d.android.com
 
