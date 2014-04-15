@@ -29,7 +29,7 @@ angular.module('myApp', ['ui.router', 'yaru22.md'])
 
     // retrieve raw project md files here
     // TODO move this to config instead
-    $http({method: 'GET', url: 'https://raw.githubusercontent.com/AndroidExamples/androidco.de/master/PROJETS.md'})
+    $http({method: 'GET', url: 'https://raw.githubusercontent.com/AndroidExamples/androidco.de/master/PROJECTS.md'})
       .success(function (data) {
         // this callback will be called asynchronously
         // when the response is available
