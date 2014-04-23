@@ -28,6 +28,12 @@ This is a fork of mine of an already nice project with the required API checks i
 
 https://github.com/hanscappelle/CameraPreviewSample
 
+## Sensor Data Handling
+
+Info on how to retrieve sensor information. Besides managing available sensors and listening for data there is also a use case for monitoring sensor data in a service. When the data goes beyond a configured threshold value the screen will be activated and unlocked. Configured for light sensor by default.
+
+https://github.com/hanscappelle/android-sensor-example
+
 ## Pick An Image
 
 Image selection in response to this SO question: http://stackoverflow.com/questions/2169649/get-pick-an-image-from-androids-built-in-gallery-app-programmatically/2636538#2636538
