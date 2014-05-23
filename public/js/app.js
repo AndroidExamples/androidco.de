@@ -9,6 +9,9 @@ angular.module("myApp", [ "ui.router", "yaru22.md" ]).config(function($stateProv
     }).state("projects", {
         url: "/projects",
         templateUrl: "partials/projects.html"
+    }).state("contribute", {
+        url: "/contribute",
+        templateUrl: "partials/contribute.html"
     }).state("about", {
         url: "/about",
         templateUrl: "partials/about.html"
