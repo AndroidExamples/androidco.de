@@ -1,6 +1,6 @@
 # http://androidco.de 
 
-A GitHub repository collecting Android examples. For more information check project website at [http://androidco.de](http://androidco.de).
+A GitHub repository collecting Android examples. For more information check project website at [http://androidco.de](http://androidco.de). Contributions are more than welcome, just fork the [PROJECTS.md](https://github.com/AndroidExamples/androidco.de/blob/master/PROJECTS.md) file to udpate the project listing and create a pull request so we get notified. 
 
 ## SwipeRefreshLayout-ListViewExample
 
