@@ -73,7 +73,6 @@ a {
 /* brand link is a little different */
 .masthead-brand > a{
     color: #000;
-
 }
 
 /* non active menu links */
@@ -101,8 +100,8 @@ a {
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
-    color: #000;
-    border-bottom-color: #000;
+    color: #669900;
+    border-bottom-color: #669900;
 }
 
 /* Responsive: Portrait tablets and up */
