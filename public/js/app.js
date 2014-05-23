@@ -1,4 +1,4 @@
-/*! androidco-de-website v0.1.0 2014-04-15 */
+/*! androidco-de-website v0.1.0 2014-05-23 */
 "use strict";
 
 angular.module("myApp", [ "ui.router", "yaru22.md" ]).config(function($stateProvider, $urlRouterProvider) {

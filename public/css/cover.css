@@ -1,72 +1,54 @@
-/*
- * Globals
- */
+/* main container */
+html,
+body {
+    background-color: #fff; /* see if we can replace this with something less white... */
+}
 
-/* Links */
-a,
-a:focus,
-a:hover {
-    color: #fff;
+body {
+    color: #333; /* not real black */
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+/* All containers get side spacing for mobile first views */
+.header,
+.inner,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* these default values are used for mobile, conservative */
+.inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.centered {
+    text-align: center;
+    margin-top:20px;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
 }
 
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
-    color: #333;
+    color: #000; /* accent on buttons using real black for text */
     text-shadow: none; /* Prevent inheritence from `body` */
-    background-color: #fff;
-    border: 1px solid #fff;
+    background-color: #fff; /* and true white as background */
+    border: 1px solid #666;
 }
 
-/*
- * Base structure
- */
-
-html,
-body {
-    height: 100%;
-    background-color: #333;
-    background: url('/assets/background.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-body {
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
-    /*box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);*/
-}
-
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-    display: table;
-    width: 100%;
-    height: 100%; /* For at least Firefox */
-    min-height: 100%;
-}
-
-.site-wrapper-inner {
-    display: table-cell;
-    vertical-align: top;
-}
-
-.cover-container {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-/* Padding for spacing */
-.inner {
-    padding: 30px;
-}
-
-/*
- * Header
- */
+/* Header */
 .masthead-brand {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -80,30 +62,62 @@ body {
     margin-left: 20px;
 }
 
+/* non active links */
+.masthead-brand > a,
 .masthead-nav > li > a {
     padding-right: 0;
     padding-left: 0;
-    font-size: 16px;
     font-weight: bold;
-    color: #fff; /* IE8 proofing */
-    color: rgba(255, 255, 255, .75);
+    color: #666;
     border-bottom: 2px solid transparent;
 }
 
+.masthead-nav > li > a {
+    font-size: 16px;
+}
+
+.masthead-brand > a:hover,
+.masthead-brand > a:focus,
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
     background-color: transparent;
     border-bottom-color: rgba(255, 255, 255, .25);
 }
 
+/* active links show real black vs #666 */
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
-    color: #fff;
-    border-bottom-color: #fff;
+    color: #000;
+    border-bottom-color: #000;
 }
 
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .header,
+    .inner,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+}
+
+/* Responsive: Portrait tablets and up */
 @media (min-width: 768px) {
+
+    /* on non mobile we can space out the inner a little more */
+    .inner {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    /* Space out the masthead */
     .masthead-brand {
         float: left;
     }
@@ -111,67 +125,14 @@ body {
     .masthead-nav {
         float: right;
     }
-}
 
-/*
- * Cover
- */
-
-.cover {
-    padding: 20px;
-    background-color: #333;
-    opacity: 0.85;
-    border-radius: 10px;
-    margin: 100px 0px 0px 0px;
-}
-
-.cover .btn-lg {
-    padding: 10px 20px;
-    font-weight: bold;
-}
-
-/*
- * Footer
- */
-
-.mastfoot {
-    color: #999; /* IE8 proofing */
-    color: rgba(255, 255, 255, .5);
-}
-
-/*
- * Affix and center
- */
-
-@media (min-width: 768px) {
     /* Pull out the header and footer */
     .masthead {
         position: fixed;
         top: 0;
     }
 
-    .mastfoot {
-        /*position: fixed;
-        bottom: 0;*/
-    }
-
-    /* Start the vertical centering */
-    .site-wrapper-inner {
-        vertical-align: middle;
-    }
-
-    /* Handle the widths */
-    .masthead,
-    .mastfoot,
-    .cover-container {
-        width: 100%; /* Must be percentage or pixels for horizontal alignment */
-    }
-}
-
-@media (min-width: 992px) {
-    .masthead,
-    .mastfoot,
-    .cover-container {
-        width: 700px;
+    .container {
+        max-width: 730px;
     }
 }

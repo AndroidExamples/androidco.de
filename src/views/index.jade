@@ -1,11 +1,11 @@
 doctype html
-html(lang='en', ng-app='myApp')
+html(lang='en')
     head
         meta(charset='utf-8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge')
         meta(name='viewport', content='width=device-width, initial-scale=1')
-        meta(name='description', content='')
-        meta(name='author', content='')
+        meta(name='description', content='A collection of Android code examples')
+        meta(name='keywords', content='android, code, example')
         link(rel='shortcut icon', href='/assets/favicon.ico')
         title ANDROIDCO.DE your number one android code example resource
         // Bootstrap core CSS
@@ -16,35 +16,48 @@ html(lang='en', ng-app='myApp')
         //if lt IE 9
             script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
             script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
-    body
-        .site-wrapper
-            .site-wrapper-inner
-                .cover-container
-                    .masthead.clearfix
-                        .inner
-                            h3.masthead-brand androidco.de
-                            ul.nav.masthead-nav
-                                li(ui-sref-active='active')
-                                    a(ui-sref='home') Home
-                                li(ui-sref-active='active')
-                                    //- TODO replace this
-                                    //- a(href='https://github.com/hanscappelle/more-android-examples/blob/master/README.md') Projects
-                                    a(ui-sref='projects') Projects
-                                li(ui-sref-active='active')
-                                    a(ui-sref='about') About
+    body(ng-app='myApp')
+        .container
+            .header
+                h3.masthead-brand
+                    a(ui-sref='home') androidco.de
+                ul.nav.masthead-nav
+                    li(ui-sref-active='active')
+                        //- TODO replace this
+                        //- a(href='https://github.com/hanscappelle/more-android-examples/blob/master/README.md') Projects
+                        a(ui-sref='projects') Projects
+                    li(ui-sref-active='active')
+                        a(ui-sref='about') About
 
-                    .inner.cover(ui-view)
+            .inner(ui-view)
 
-                    .mastfoot
-                        .inner
-                            p
-                                | Cover template for
-                                |&nbsp;
-                                a(href='http://getbootstrap.com') Bootstrap
-                                | , by
-                                |&nbsp;
-                                a(href='https://twitter.com/mdo') @mdo
-                                | .
+            .footer
+                p
+                    | Cover template for
+                    |&nbsp;
+                    a(href='http://getbootstrap.com') Bootstrap
+                    | , by
+                    |&nbsp;
+                    a(href='https://twitter.com/mdo') @mdo
+                    | .
+
+        //-- Google Analytics: change UA-XXXXX-X to be your site's ID
+        script.
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-3004564-20');
+            ga('send', 'pageview');
+
         // Bootstrap core JavaScript
         // ==================================================
         // Placed at the end of the document so the pages load faster

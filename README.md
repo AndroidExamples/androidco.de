@@ -16,6 +16,14 @@ Use grunt to compile jade files into html. During development grunt watch can be
 
 ## Version History
 
+### 0.2.0
+
+* added google analytics
+* simplified layout
+* removed home link
+* added contribute link
+* meta data update
+
 ### 0.1.4
 
 * moved repo to organization +  update references
@@ -46,4 +54,5 @@ Initial version with a cover page, about page and a link to github project readm
 * https://github.com/zeke/github-raw-cors-proxy
 * https://github.com/AndroidExamples
 * http://d.android.com
+* colors from http://developer.android.com/design/style/color.html
 
