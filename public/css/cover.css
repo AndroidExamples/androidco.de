@@ -38,6 +38,14 @@ body {
     margin: 30px 0;
 }
 
+/* in page link colors */
+a:hover, a:focus {
+    color: #99CC00;
+}
+a {
+    color: #669900;
+}
+
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
