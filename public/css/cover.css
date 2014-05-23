@@ -70,8 +70,13 @@ a {
     margin-left: 20px;
 }
 
-/* non active links */
-.masthead-brand > a,
+/* brand link is a little different */
+.masthead-brand > a{
+    color: #000;
+
+}
+
+/* non active menu links */
 .masthead-nav > li > a {
     padding-right: 0;
     padding-left: 0;
