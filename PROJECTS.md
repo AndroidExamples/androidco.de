@@ -32,7 +32,7 @@ https://github.com/hanscappelle/CameraPreviewSample
 
 Info on how to retrieve sensor information. Besides managing available sensors and listening for data there is also a use case for monitoring sensor data in a service. When the data goes beyond a configured threshold value the screen will be activated and unlocked. Configured for light sensor by default.
 
-https://github.com/hanscappelle/android-sensor-example
+https://github.com/AndroidExamples/android-sensor-example
 
 ## Pick An Image
 
