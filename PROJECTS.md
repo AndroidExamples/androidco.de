@@ -2,6 +2,12 @@
 
 A GitHub repository collecting Android examples. For more information check project website at [http://androidco.de](http://androidco.de). Contributions are more than welcome, just fork the [PROJECTS.md](https://github.com/AndroidExamples/androidco.de/blob/master/PROJECTS.md) file to udpate the project listing and create a pull request so we get notified. 
 
+## ListView with Custom Adapter & ViewHolder pattern
+
+https://github.com/hanscappelle/so-2250770
+
+quick android listview example with custom adapter showing how to reload data properly. ListView is also using ViewHolder pattern for performance.
+
 ## SwipeRefreshLayout-ListViewExample
 
 Example SwipeRefreshLayout with ListView-EmptyView combination.
