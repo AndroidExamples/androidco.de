@@ -58,14 +58,6 @@ https://github.com/hanscappelle/more-android-examples/tree/master/PickAnImage
 
 (WIP, needs work)
 
-## Android REST Example
-
-Android App getting information from a REST backend over network. 
-
-Example coming soon.
-
-(wip)
-
 ## Unzip
 
 Basic example for on Android device file unzipping.
