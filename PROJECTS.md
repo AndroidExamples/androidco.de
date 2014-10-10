@@ -2,6 +2,16 @@
 
 A GitHub repository collecting Android examples. For more information check project website at [http://androidco.de](http://androidco.de). Contributions are more than welcome, just fork the [PROJECTS.md](https://github.com/AndroidExamples/androidco.de/blob/master/PROJECTS.md) file to udpate the project listing and create a pull request so we get notified. 
 
+## Android REST client example
+
+Android REST client example using retrofit for api calls. Demonstrates keeping cookies for session
+in singleton Application object as well as using the http response cache.
+
+Realm.io for android is used to cache data on device when network is available so that we can show
+something if app is gone offline.
+
+https://github.com/hanscappelle/android-rest-example.git
+
 ## ListView with Custom Adapter & ViewHolder pattern
 
 https://github.com/hanscappelle/so-2250770
