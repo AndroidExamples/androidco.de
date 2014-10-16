@@ -26,13 +26,13 @@ https://github.com/AndroidExamples/SwipeRefreshLayout-ListViewExample
 
 https://plus.google.com/114880761689491946950/posts/AgmWt8ajZR3
 
-## Actionbar Compat & Menu Drawer
+## Actionbar Compat & Menu Drawer (Eclipse ADT)
 
 Example based on the official Android ActionBar example but now implemented with the actionbar compat implementation and a menu drawer added. This is how to use the menu drawer (aka sliding menu) and actionbar on 2.1 and up devices the right way. 
 
 [https://github.com/hanscappelle/menu-drawer-compat-example](https://github.com/hanscappelle/menu-drawer-compat-example)
 
-## Fragment Based Navigation
+## Fragment Based Navigation + Actionbar Compat & Menu Drawer (Android Studio)
 
 A simple project showing Fragment based navigation with responsive layout options and back navigation support.
 
