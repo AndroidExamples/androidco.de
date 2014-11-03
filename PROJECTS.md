@@ -2,6 +2,12 @@
 
 A GitHub repository collecting Android examples. For more information check project website at [http://androidco.de](http://androidco.de). Contributions are more than welcome, just fork the [PROJECTS.md](https://github.com/AndroidExamples/androidco.de/blob/master/PROJECTS.md) file to udpate the project listing and create a pull request so we get notified. 
 
+## Android JUnit - Robolectric - Android Studio Sample Project
+
+Example project of writing JUnit tests using robolectric 0.13.+ on gradle build 0.13.2 and Android Studio 0.8.14
+
+https://github.com/hanscappelle/android-studio-junit-robolectric
+
 ## Android REST client example
 
 Android REST client example using retrofit for api calls. Demonstrates keeping cookies for session
