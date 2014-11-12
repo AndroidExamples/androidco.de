@@ -14,6 +14,8 @@ Example project of writing JUnit tests using robolectric 0.13.+ on gradle build 
 
 https://github.com/hanscappelle/android-studio-junit-robolectric
 
+TODO: review since this example is still failing for UI stuff. Instead check https://github.com/blundell/tests-app-robolectric-junit for a complete working example including UI related testing.
+
 ## Android REST client example
 
 Android REST client example using retrofit for api calls. Demonstrates keeping cookies for session
@@ -21,6 +23,8 @@ in singleton Application object as well as using the http response cache.
 
 Realm.io for android is used to cache data on device when network is available so that we can show
 something if app is gone offline.
+
+TODO: add caching example
 
 https://github.com/hanscappelle/android-rest-example.git
 
@@ -44,11 +48,15 @@ Example based on the official Android ActionBar example but now implemented with
 
 [https://github.com/hanscappelle/menu-drawer-compat-example](https://github.com/hanscappelle/menu-drawer-compat-example)
 
+Check next example for Android Studio implementation.
+
 ## Fragment Based Navigation + Actionbar Compat & Menu Drawer (Android Studio)
 
 A simple project showing Fragment based navigation with responsive layout options and back navigation support.
 
 https://github.com/AndroidExamples/fragment-navigation
+
+TODO: update for material design using support v4 and v7 (already implemented in other examples like the beacon example)
 
 ## Android Camera Preview 
 
@@ -68,7 +76,7 @@ Image selection in response to this SO question: http://stackoverflow.com/questi
 
 https://github.com/hanscappelle/more-android-examples/tree/master/PickAnImage
 
-(WIP, needs work)
+TODO: WIP, needs work
 
 ## Unzip
 
@@ -76,7 +84,7 @@ Basic example for on Android device file unzipping.
 
 https://github.com/hanscappelle/more-android-examples/tree/master/Unzip
 
-(wip, needs work)
+TODO: wip, needs work
 
 ## Weather Forecast
 
