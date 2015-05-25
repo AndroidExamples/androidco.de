@@ -74,9 +74,9 @@ https://github.com/AndroidExamples/android-sensor-example
 
 Image selection in response to this SO question: http://stackoverflow.com/questions/2169649/get-pick-an-image-from-androids-built-in-gallery-app-programmatically/2636538#2636538
 
-https://github.com/hanscappelle/more-android-examples/tree/master/PickAnImage
+https://github.com/hanscappelle/SO-2169649
 
-TODO: WIP, needs work
+TODO: multiple images needs work
 
 ## Unzip
 
