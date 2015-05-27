@@ -70,7 +70,7 @@ Info on how to retrieve sensor information. Besides managing available sensors a
 
 https://github.com/AndroidExamples/android-sensor-example
 
-## Pick An Image
+## Pick An Image (Android Studio)
 
 Image selection in response to this SO question: http://stackoverflow.com/questions/2169649/get-pick-an-image-from-androids-built-in-gallery-app-programmatically/2636538#2636538
 
