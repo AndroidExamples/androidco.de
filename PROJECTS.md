@@ -2,6 +2,12 @@
 
 A GitHub repository collecting Android examples. For more information check project website at [http://androidco.de](http://androidco.de). Contributions are more than welcome, just fork the [PROJECTS.md](https://github.com/AndroidExamples/androidco.de/blob/master/PROJECTS.md) file to udpate the project listing and create a pull request so we get notified. 
 
+## Android AppCompat example using Toolbar and NavigationDrawer (Android Studio)
+
+This examples upgrades the ActionBar example provided by Android Sample Projects replacing the actionbar with a toolbar and reusing the NavigationDrawer.
+
+https://github.com/hanscappelle/android-toolbar-example
+
 ## Android Beacon Example
 
 This app shows how to use the altbeacon library with a custom parser so we can scan for true ibeacon specced beacons.
