@@ -62,7 +62,8 @@ A simple project showing Fragment based navigation with responsive layout option
 
 https://github.com/AndroidExamples/fragment-navigation
 
-TODO: update for material design using support v4 and v7 (already implemented in other examples like the beacon example)
+-TODO: update for material design using support v4 and v7 (already implemented in other examples like the beacon example)-
+Forget about the ActionBar and use a toolbar instead, check https://github.com/hanscappelle/android-toolbar-example
 
 ## Android Camera Preview 
 
